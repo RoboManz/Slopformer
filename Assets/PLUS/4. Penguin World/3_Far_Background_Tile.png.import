@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6ld0wlrm41ds"
-path="res://.godot/imported/3_Far_Background_Tile.png-f59f4ffe54bfaaa7d208fecbe76e3f46.ctex"
+path="res://.godot/imported/3_Far_Background_Tile.png-275e38ddf53380cead3b4742f382f368.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PLUS/4. Penguin World/3_Far_Background_Tile.png"
-dest_files=["res://.godot/imported/3_Far_Background_Tile.png-f59f4ffe54bfaaa7d208fecbe76e3f46.ctex"]
+source_file="res://assets/PLUS/4. Penguin World/3_Far_Background_Tile.png"
+dest_files=["res://.godot/imported/3_Far_Background_Tile.png-275e38ddf53380cead3b4742f382f368.ctex"]
 
 [params]
 

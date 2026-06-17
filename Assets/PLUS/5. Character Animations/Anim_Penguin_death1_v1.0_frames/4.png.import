@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djjcgysx8ajpm"
-path="res://.godot/imported/4.png-61de95caac23babd2cef9b9b8f907e72.ctex"
+path="res://.godot/imported/4.png-73d51c271ff076ee0e99e084c453038e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PLUS/5. Character Animations/Anim_Penguin_death1_v1.0_frames/4.png"
-dest_files=["res://.godot/imported/4.png-61de95caac23babd2cef9b9b8f907e72.ctex"]
+source_file="res://assets/PLUS/5. Character Animations/Anim_Penguin_death1_v1.0_frames/4.png"
+dest_files=["res://.godot/imported/4.png-73d51c271ff076ee0e99e084c453038e.ctex"]
 
 [params]
 

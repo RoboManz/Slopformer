@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://duifh1oxxugmu"
-path="res://.godot/imported/3_PinguinWorld4_Tileset_1_FarBackground_A.png-00273f887ea149f22fc38216dc67c748.ctex"
+path="res://.godot/imported/3_PinguinWorld4_Tileset_1_FarBackground_A.png-6fb445aad4463e362f887d13e30c3888.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PLUS/4. Penguin World/3_PinguinWorld4_Tileset_1_FarBackground_A.png"
-dest_files=["res://.godot/imported/3_PinguinWorld4_Tileset_1_FarBackground_A.png-00273f887ea149f22fc38216dc67c748.ctex"]
+source_file="res://assets/PLUS/4. Penguin World/3_PinguinWorld4_Tileset_1_FarBackground_A.png"
+dest_files=["res://.godot/imported/3_PinguinWorld4_Tileset_1_FarBackground_A.png-6fb445aad4463e362f887d13e30c3888.ctex"]
 
 [params]
 

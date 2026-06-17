@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dprqfm7mw8aqf"
-path="res://.godot/imported/1_PenguinWorld1_Props_1.png-f5ecaac441430283f0926d9bc8badd99.ctex"
+path="res://.godot/imported/1_PenguinWorld1_Props_1.png-a70675787f347dd2de4ffb2ba0d973a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PLUS/4. Penguin World/1_PenguinWorld1_Props_1.png"
-dest_files=["res://.godot/imported/1_PenguinWorld1_Props_1.png-f5ecaac441430283f0926d9bc8badd99.ctex"]
+source_file="res://assets/PLUS/4. Penguin World/1_PenguinWorld1_Props_1.png"
+dest_files=["res://.godot/imported/1_PenguinWorld1_Props_1.png-a70675787f347dd2de4ffb2ba0d973a9.ctex"]
 
 [params]
 

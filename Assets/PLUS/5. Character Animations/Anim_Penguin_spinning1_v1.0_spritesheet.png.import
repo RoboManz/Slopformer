@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfm2rqv6iln77"
-path="res://.godot/imported/Anim_Penguin_spinning1_v1.0_spritesheet.png-b80460a1c8009be0e6859229e1694cc4.ctex"
+path="res://.godot/imported/Anim_Penguin_spinning1_v1.0_spritesheet.png-263ea714d247a80f645ad51fef61b391.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PLUS/5. Character Animations/Anim_Penguin_spinning1_v1.0_spritesheet.png"
-dest_files=["res://.godot/imported/Anim_Penguin_spinning1_v1.0_spritesheet.png-b80460a1c8009be0e6859229e1694cc4.ctex"]
+source_file="res://assets/PLUS/5. Character Animations/Anim_Penguin_spinning1_v1.0_spritesheet.png"
+dest_files=["res://.godot/imported/Anim_Penguin_spinning1_v1.0_spritesheet.png-263ea714d247a80f645ad51fef61b391.ctex"]
 
 [params]
 

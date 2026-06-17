@@ -1,11 +1,7 @@
 [gd_scene format=3 uid="uid://c3k7leuhjeark"]
 
 [ext_resource type="Script" uid="uid://bgr703f7i4roc" path="res://player.gd" id="1_onrkg"]
-[ext_resource type="Texture2D" uid="uid://c37u8bb64u3vm" path="res://Assets/playerAnimations/placey.png" id="2_i3pqv"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hqtel"]
-atlas = ExtResource("2_i3pqv")
-region = Rect2(96, 64, 32, 32)
+[ext_resource type="Texture2D" uid="uid://c37u8bb64u3vm" path="res://assets/playerAnimations/placey.png" id="2_i3pqv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sweqy"]
 atlas = ExtResource("2_i3pqv")
@@ -75,9 +71,6 @@ region = Rect2(64, 64, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_hqtel")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_sweqy")
 }, {
 "duration": 1.0,
@@ -91,7 +84,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Explode",
-"speed": 5.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -125,7 +118,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Jump",
-"speed": 5.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -158,7 +151,9 @@ script = ExtResource("1_onrkg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=446356042]
 sprite_frames = SubResource("SpriteFrames_5tmop")
-animation = &"Run"
+animation = &"Explode"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2132144120]
 shape = SubResource("CapsuleShape2D_7ahtn")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2039801776]

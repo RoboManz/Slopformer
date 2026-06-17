@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cb482hopdpkov"
-path="res://.godot/imported/8.png-ccac9c097f2c6592fdd9248563ed7192.ctex"
+path="res://.godot/imported/8.png-90bc614e70afb9cc16a7142e5d06dbd6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PLUS/6. Enemies Animations/Anim_PenguinWorld2_Saw1_v1.0_frames/8.png"
-dest_files=["res://.godot/imported/8.png-ccac9c097f2c6592fdd9248563ed7192.ctex"]
+source_file="res://assets/PLUS/6. Enemies Animations/Anim_PenguinWorld2_Saw1_v1.0_frames/8.png"
+dest_files=["res://.godot/imported/8.png-90bc614e70afb9cc16a7142e5d06dbd6.ctex"]
 
 [params]
 

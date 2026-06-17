@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://runfj6vyp8yj"
-path="res://.godot/imported/1_PenguinWorld5_Tileset_3_Background.png-5b6919c68e678fd434236d924e73c72f.ctex"
+path="res://.godot/imported/1_PenguinWorld5_Tileset_3_Background.png-1376d4aee8a3898c5453ab0bdcbcce2c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PLUS/4. Penguin World/1_PenguinWorld5_Tileset_3_Background.png"
-dest_files=["res://.godot/imported/1_PenguinWorld5_Tileset_3_Background.png-5b6919c68e678fd434236d924e73c72f.ctex"]
+source_file="res://assets/PLUS/4. Penguin World/1_PenguinWorld5_Tileset_3_Background.png"
+dest_files=["res://.godot/imported/1_PenguinWorld5_Tileset_3_Background.png-1376d4aee8a3898c5453ab0bdcbcce2c.ctex"]
 
 [params]
 

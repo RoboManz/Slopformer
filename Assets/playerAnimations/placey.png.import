@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c37u8bb64u3vm"
-path="res://.godot/imported/placey.png-da9dcef99217ead2dad4025303c98490.ctex"
+path="res://.godot/imported/placey.png-0000813f230706bd45d8aaacfe794956.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/playerAnimations/placey.png"
-dest_files=["res://.godot/imported/placey.png-da9dcef99217ead2dad4025303c98490.ctex"]
+source_file="res://assets/playerAnimations/placey.png"
+dest_files=["res://.godot/imported/placey.png-0000813f230706bd45d8aaacfe794956.ctex"]
 
 [params]
 

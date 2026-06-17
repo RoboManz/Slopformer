@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://43b6c4750t11"
-path="res://.godot/imported/Anim_Penguin_glide1_v1.0_spritesheet.png-a731460c10f96561d39a9d249e54996b.ctex"
+path="res://.godot/imported/Anim_Penguin_glide1_v1.0_spritesheet.png-004af5ff1046cb2c595279b678f63ab1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PLUS/5. Character Animations/Anim_Penguin_glide1_v1.0_spritesheet.png"
-dest_files=["res://.godot/imported/Anim_Penguin_glide1_v1.0_spritesheet.png-a731460c10f96561d39a9d249e54996b.ctex"]
+source_file="res://assets/PLUS/5. Character Animations/Anim_Penguin_glide1_v1.0_spritesheet.png"
+dest_files=["res://.godot/imported/Anim_Penguin_glide1_v1.0_spritesheet.png-004af5ff1046cb2c595279b678f63ab1.ctex"]
 
 [params]
 

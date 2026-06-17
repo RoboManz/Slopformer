@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://edrs4yyc0tad"
-path="res://.godot/imported/1.png-0f98628415351ad6bd1e062b66d52ea1.ctex"
+path="res://.godot/imported/1.png-84e9155e440c2499f8a9e4daa6569c4b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PLUS/5. Character Animations/Anim_Penguin_land-launch1_v1.0_frames/1.png"
-dest_files=["res://.godot/imported/1.png-0f98628415351ad6bd1e062b66d52ea1.ctex"]
+source_file="res://assets/PLUS/5. Character Animations/Anim_Penguin_land-launch1_v1.0_frames/1.png"
+dest_files=["res://.godot/imported/1.png-84e9155e440c2499f8a9e4daa6569c4b.ctex"]
 
 [params]
 
