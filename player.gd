@@ -6,20 +6,21 @@ const JUMP_VELOCITY = -400.0
 
 
 func _physics_process(delta: float) -> void:
-	# Add the gravity.
-
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept"):
-		velocity.y = JUMP_VELOCITY
-	else:
-		velocity += get_gravity()*delta
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction := Input.get_axis("ui_left", "ui_right")
+	var direction = Input.get_axis("left", "right")
 	if direction:
-		velocity.x = direction * SPEED
+		velocity.x = SPEED * sign(direction)
+		if(sign(direction) < 0):
+			$AnimatedSprite2D.flip_h = true
+		else:
+			$AnimatedSprite2D.flip_h = false
+		$AnimatedSprite2D.play("Run")
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+		velocity.x -= 300 * delta * sign(velocity.x)
+		
+	velocity += get_gravity() * delta
+	
+	if(Input.is_action_just_pressed("jump")):
+		$AnimatedSprite2D.play("Jump")
+		velocity.y =  JUMP_VELOCITY
+		
 	move_and_slide()
