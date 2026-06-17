@@ -11,8 +11,35 @@ config_version=5
 [application]
 
 config/name="Slopformer"
+run/main_scene="res://test.tscn"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=360
+window/size/resizable=false
+window/stretch/scale_mode="integer"
+
+[input]
+
+jump={
+"deadzone": 0.2,
+"events": []
+}
+left={
+"deadzone": 0.2,
+"events": []
+}
+right={
+"deadzone": 0.2,
+"events": []
+}
+dash={
+"deadzone": 0.2,
+"events": []
+}
 
 [physics]
 
@@ -20,4 +47,5 @@ config/icon="res://icon.svg"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
