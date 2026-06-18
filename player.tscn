@@ -1,7 +1,39 @@
 [gd_scene format=3 uid="uid://c3k7leuhjeark"]
 
 [ext_resource type="Script" uid="uid://bgr703f7i4roc" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://dv2x0oayo820j" path="res://assets/playerAnimations/droppy.png" id="2_b26j0"]
 [ext_resource type="Texture2D" uid="uid://c37u8bb64u3vm" path="res://assets/playerAnimations/placey.png" id="2_i3pqv"]
+[ext_resource type="Script" uid="uid://jq1np1e1g4qc" path="res://player_states/StateMachine.gd" id="3_hqtel"]
+[ext_resource type="Script" uid="uid://bcx2a1jh4yk56" path="res://player_states/idle.gd" id="4_sweqy"]
+[ext_resource type="Script" uid="uid://bibuojtoi5arq" path="res://player_states/running.gd" id="5_2hs0m"]
+[ext_resource type="Script" uid="uid://dwjku3wsdjg1" path="res://player_states/falling.gd" id="5_sweqy"]
+[ext_resource type="Script" uid="uid://by5fs3ucet8e7" path="res://player_states/jumping.gd" id="6_1jxqw"]
+[ext_resource type="Script" uid="uid://ckha3wu7tds7e" path="res://player_states/dashing.gd" id="8_dw050"]
+[ext_resource type="Script" uid="uid://kqj6264s6kli" path="res://player_states/dropping.gd" id="10_n7ghd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5tmop"]
+atlas = ExtResource("2_b26j0")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ahtn"]
+atlas = ExtResource("2_b26j0")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7lmhl"]
+atlas = ExtResource("2_b26j0")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dx0e4"]
+atlas = ExtResource("2_b26j0")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jm5j8"]
+atlas = ExtResource("2_b26j0")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7hik5"]
+atlas = ExtResource("2_b26j0")
+region = Rect2(32, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sweqy"]
 atlas = ExtResource("2_i3pqv")
@@ -71,6 +103,29 @@ region = Rect2(64, 64, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_5tmop")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ahtn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7lmhl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dx0e4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jm5j8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7hik5")
+}],
+"loop": true,
+"name": &"Drop",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_sweqy")
 }, {
 "duration": 1.0,
@@ -136,6 +191,29 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_5tmop")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ahtn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7lmhl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dx0e4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jm5j8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7hik5")
+}],
+"loop": true,
+"name": &"SuperDrop",
+"speed": 72.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_pbfsw")
 }],
 "loop": true,
@@ -151,9 +229,30 @@ script = ExtResource("1_onrkg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=446356042]
 sprite_frames = SubResource("SpriteFrames_5tmop")
-animation = &"Explode"
+animation = &"SuperDrop"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2132144120]
 shape = SubResource("CapsuleShape2D_7ahtn")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2039801776]
+
+[node name="StateMachine" type="Node" parent="." unique_id=175228123]
+script = ExtResource("3_hqtel")
+
+[node name="Idle" type="Node" parent="StateMachine" unique_id=2086075066]
+script = ExtResource("4_sweqy")
+
+[node name="Running" type="Node" parent="StateMachine" unique_id=383389799]
+script = ExtResource("5_2hs0m")
+
+[node name="Jumping" type="Node" parent="StateMachine" unique_id=29944214]
+script = ExtResource("6_1jxqw")
+
+[node name="Falling" type="Node" parent="StateMachine" unique_id=2140288174]
+script = ExtResource("5_sweqy")
+
+[node name="Dashing" type="Node" parent="StateMachine" unique_id=1059329955]
+script = ExtResource("8_dw050")
+
+[node name="Dropping" type="Node" parent="StateMachine" unique_id=1645648476]
+script = ExtResource("10_n7ghd")
