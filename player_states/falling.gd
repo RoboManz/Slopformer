@@ -1,6 +1,6 @@
 extends PlayerState
 
-var timer = 0.1
+var timer 
 func enter(previous_state_path: String, data := {}) -> void:
 	player.sprite.play("Drop")
 	timer = 0.5

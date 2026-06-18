@@ -13,5 +13,5 @@ func physics_update(delta: float) -> void:
 	
 	print("vspeed",vspeed)
 	if player.is_on_floor():
-		player.velocity.y = -vspeed - 100
+		player.velocity.y = min(-350 ,-vspeed - 100)
 		finished.emit(JUMPING)
