@@ -12,10 +12,15 @@ func enter(previous_state_path: String, data := {}) -> void:
 
 func physics_update(delta: float) -> void:
 	timer -= delta
+	direction = Input.get_axis("left", "right")
 	player.move_and_slide()
 	
 	if Input.is_action_just_pressed("drop"):
 		finished.emit(DROPPING)
+		
+	if(sign(direction) == -sign(player.velocity.x) and direction):
+		player.velocity.x = 0
+		finished.emit(JUMPING)
 		
 	if player.is_on_wall():
 		player.canDash = true
