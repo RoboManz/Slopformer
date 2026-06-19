@@ -1,6 +1,7 @@
 class_name Player extends CharacterBody2D
 
 var vspeed
+var direction
 var SPEED := 0.0
 var canDash : bool 
 var spawnpoint = Vector2.ZERO

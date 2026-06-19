@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://8yyhao2ogsm6" path="res://assets/PLUS/4. Penguin World/4_Far_Background_Tile_World1.png" id="1_wplue"]
 [ext_resource type="PackedScene" uid="uid://bo8ck1kr8nxxu" path="res://killzone.tscn" id="4_v1v1y"]
 [ext_resource type="PackedScene" uid="uid://cvsxwg2j3a7n" path="res://next.tscn" id="5_whifm"]
+[ext_resource type="Texture2D" uid="uid://0l6qehpsa18m" path="res://assets/levelAssets/uppies.png" id="6_eku0o"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jn837"]
 texture = ExtResource("1_8h6om")
@@ -81,3 +82,11 @@ position = Vector2(-1023, 395)
 
 [node name="Next" parent="." unique_id=95193668 instance=ExtResource("5_whifm")]
 position = Vector2(639, -39)
+
+[node name="Uppies" type="Sprite2D" parent="." unique_id=405095829]
+position = Vector2(171, 119)
+texture = ExtResource("6_eku0o")
+
+[node name="Uppies2" type="Sprite2D" parent="." unique_id=1361181692]
+position = Vector2(168, 51)
+texture = ExtResource("6_eku0o")

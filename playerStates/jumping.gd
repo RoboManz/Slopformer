@@ -25,7 +25,7 @@ func physics_update(delta: float) -> void:
 			finished.emit(RUNNING)
 	elif Input.is_action_just_pressed("dash") and player.canDash:
 		player.canDash = false
-		player.velocity.x = direction
+		player.direction = direction
 		finished.emit(DASHING)
 	elif Input.is_action_just_pressed("drop"):
 		finished.emit(DROPPING)

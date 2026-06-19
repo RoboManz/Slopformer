@@ -6,7 +6,7 @@ func enter(previous_state_path: String, data := {}) -> void:
 	player.sprite.play("Explode")
 	direction = sign(player.velocity.x)
 	player.velocity.y = 0
-	player.velocity.x = 1000 * direction
+	player.velocity.x = 1000 * player.direction
 	timer = 0.25
 
 
