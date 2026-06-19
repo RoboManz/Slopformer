@@ -1,6 +1,7 @@
 extends PlayerState
 
 func enter(previous_state_path: String, data := {}) -> void:
+	player.canDash = true
 	player.sprite.play("Idle")
 
 func physics_update(delta: float) -> void:

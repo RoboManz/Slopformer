@@ -1,0 +1,83 @@
+[gd_scene format=4 uid="uid://bu85oqqo6d2qa"]
+
+[ext_resource type="Texture2D" uid="uid://cbq5skkb14m8y" path="res://assets/PLUS/4. Penguin World/1_PinguinWorld1_Tileset_1.png" id="1_8h6om"]
+[ext_resource type="PackedScene" uid="uid://c3k7leuhjeark" path="res://player.tscn" id="1_jn837"]
+[ext_resource type="Texture2D" uid="uid://8yyhao2ogsm6" path="res://assets/PLUS/4. Penguin World/4_Far_Background_Tile_World1.png" id="1_wplue"]
+[ext_resource type="PackedScene" uid="uid://bo8ck1kr8nxxu" path="res://killzone.tscn" id="4_v1v1y"]
+[ext_resource type="PackedScene" uid="uid://cvsxwg2j3a7n" path="res://next.tscn" id="5_whifm"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jn837"]
+texture = ExtResource("1_8h6om")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:2/0 = 0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:3/0 = 0
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:3/0 = 0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_wplue"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_jn837")
+
+[node name="room_5" type="Node2D" unique_id=908211050]
+
+[node name="4FarBackgroundTileWorld1" type="Sprite2D" parent="." unique_id=1407046544]
+position = Vector2(580.5001, 391.0001)
+scale = Vector2(178.6875, 107.12501)
+texture = ExtResource("1_wplue")
+
+[node name="player" parent="." unique_id=1713871146 instance=ExtResource("1_jn837")]
+position = Vector2(12, 279)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=815086099]
+position = Vector2(-15, 1)
+tile_map_data = PackedByteArray("AAABABMAAAAAAAEAAAABABQAAAAAAAIAAAABABUAAAAAAAMAAAACABMAAAABAAEAAAACABQAAAABAAIAAAACABUAAAABAAMAAAADABMAAAABAAEAAAADABQAAAABAAIAAAADABUAAAABAAMAAAAEABMAAAABAAEAAAAEABQAAAABAAIAAAAEABUAAAABAAMAAAAFABMAAAABAAEAAAAFABQAAAABAAIAAAAFABUAAAABAAMAAAAGABMAAAABAAEAAAAGABQAAAABAAIAAAAGABUAAAABAAMAAAAHABMAAAABAAEAAAAHABQAAAABAAIAAAAHABUAAAABAAMAAAAIABMAAAABAAEAAAAIABQAAAABAAIAAAAIABUAAAABAAMAAAAJABMAAAABAAEAAAAJABQAAAABAAIAAAAJABUAAAABAAMAAAABAAoAAAAAAAEAAAABAAsAAAAAAAIAAAABAAwAAAAAAAMAAAACAAoAAAABAAEAAAACAAsAAAABAAIAAAACAAwAAAABAAMAAAADAAoAAAABAAEAAAADAAsAAAABAAIAAAADAAwAAAABAAMAAAAEAAoAAAABAAEAAAAEAAsAAAABAAIAAAAEAAwAAAABAAMAAAAFAAoAAAABAAEAAAAFAAsAAAABAAIAAAAFAAwAAAABAAMAAAAGAAoAAAABAAEAAAAGAAsAAAABAAIAAAAGAAwAAAABAAMAAAAHAAoAAAABAAEAAAAHAAsAAAABAAIAAAAHAAwAAAABAAMAAAAIAAoAAAABAAEAAAAIAAsAAAABAAIAAAAIAAwAAAABAAMAAAAJAAoAAAABAAEAAAAJAAsAAAABAAIAAAAJAAwAAAABAAMAAAAKAAoAAAABAAEAAAAKAAsAAAABAAIAAAAKAAwAAAABAAMAAAALAAoAAAACAAEAAAALAAsAAAACAAIAAAALAAwAAAACAAMAAAASAAoAAAADAAEAAAASAAsAAAADAAIAAAASAAwAAAADAAIAAAASAA0AAAADAAIAAAASAA4AAAADAAIAAAASAA8AAAADAAIAAAASABAAAAADAAIAAAASABEAAAADAAIAAAASABIAAAADAAIAAAASABMAAAADAAIAAAASABQAAAADAAIAAAASABUAAAADAAMAAAARAP//AAAAAAEAAAARAAAAAAAAAAIAAAARAAEAAAAAAAMAAAASAP//AAABAAEAAAASAAAAAAABAAIAAAASAAEAAAABAAMAAAATAP//AAACAAEAAAATAAAAAAACAAIAAAATAAEAAAACAAMAAAAiAP//AAAAAAEAAAAiAAAAAAAAAAIAAAAiAAEAAAAAAAMAAAAjAP//AAABAAEAAAAjAAAAAAABAAIAAAAjAAEAAAABAAMAAAAkAP//AAABAAEAAAAkAAAAAAABAAIAAAAkAAEAAAABAAMAAAAlAP//AAABAAEAAAAlAAAAAAABAAIAAAAlAAEAAAABAAMAAAAmAP//AAABAAEAAAAmAAAAAAABAAIAAAAmAAEAAAABAAMAAAAnAP//AAABAAEAAAAnAAAAAAABAAIAAAAnAAEAAAABAAMAAAAoAP//AAABAAEAAAAoAAAAAAABAAIAAAAoAAEAAAABAAMAAAApAP//AAABAAEAAAApAAAAAAABAAIAAAApAAEAAAABAAMAAAAqAP//AAABAAEAAAAqAAAAAAABAAIAAAAqAAEAAAABAAMAAAArAP//AAABAAEAAAArAAAAAAABAAIAAAArAAEAAAABAAMAAAAsAP//AAABAAEAAAAsAAAAAAABAAIAAAAsAAEAAAABAAMAAAAtAP//AAABAAEAAAAtAAAAAAABAAIAAAAtAAEAAAABAAMAAAAuAP//AAABAAEAAAAuAAAAAAABAAIAAAAuAAEAAAABAAMAAAAvAP//AAACAAEAAAAvAAAAAAACAAIAAAAvAAEAAAACAAMAAAAgAAsAAAAAAAEAAAAgAAwAAAAAAAIAAAAgAA0AAAAAAAMAAAAhAAsAAAABAAEAAAAhAAwAAAABAAIAAAAhAA0AAAABAAMAAAAiAAsAAAACAAEAAAAiAAwAAAACAAIAAAAiAA0AAAACAAMAAAA9AP3/AAADAAEAAAA9AP7/AAADAAIAAAA9AP//AAADAAIAAAA9AAAAAAADAAIAAAA9AAEAAAADAAIAAAA9AAIAAAADAAIAAAA9AAMAAAADAAIAAAA9AAQAAAADAAIAAAA9AAUAAAADAAIAAAA9AAYAAAADAAIAAAA9AAcAAAADAAIAAAA9AAgAAAADAAIAAAA9AAkAAAADAAIAAAA9AAoAAAADAAIAAAA9AAsAAAADAAIAAAA9AAwAAAADAAIAAAA9AA0AAAADAAIAAAA9AA4AAAADAAIAAAA9AA8AAAADAAIAAAA9ABAAAAADAAIAAAA9ABEAAAADAAIAAAA9ABIAAAADAAIAAAA9ABMAAAADAAIAAAA9ABQAAAADAAIAAAA9ABUAAAADAAMAAAAKABMAAAABAAEAAAAKABQAAAABAAIAAAAKABUAAAABAAMAAAALABMAAAACAAEAAAALABQAAAACAAIAAAALABUAAAACAAMAAAA=")
+tile_set = SubResource("TileSet_wplue")
+
+[node name="killzone" parent="." unique_id=1433667462 instance=ExtResource("4_v1v1y")]
+position = Vector2(-1023, 395)
+
+[node name="Next" parent="." unique_id=95193668 instance=ExtResource("5_whifm")]
+position = Vector2(639, -39)

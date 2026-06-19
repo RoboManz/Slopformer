@@ -1,6 +1,7 @@
 extends PlayerState
 
 func enter(previous_state_path: String, data := {}) -> void:
+	player.canDash = true
 	player.sprite.play("Run")
 	
 func physics_update(delta: float) -> void:
@@ -20,6 +21,10 @@ func physics_update(delta: float) -> void:
 		player.velocity.x += 2 * player.ACCELERATION * -sign(player.velocity.x) * delta
 		player.SPEED = abs(player.velocity.x)
 		
+	if(player.SPEED > player.MAXSPEED):
+		player.velocity.x += 10 * player.ACCELERATION * -sign(player.velocity.x) * delta
+		player.SPEED = abs(player.velocity.x)
+	
 	if(player.is_on_wall()):
 		player.SPEED = 0
 		

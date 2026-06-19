@@ -1,18 +1,19 @@
 extends PlayerState
 
-var timer 
+var coyoteTimer 
 func enter(previous_state_path: String, data := {}) -> void:
 	player.sprite.play("Drop")
-	timer = 0.5
+	if(previous_state_path == RUNNING or previous_state_path == IDLE):
+		coyoteTimer = 0.5
 	
 func physics_update(delta: float) -> void:
-	timer -= delta
+	coyoteTimer -= delta
 	player.velocity += player.get_gravity() * delta
 	var direction = Input.get_axis("left", "right")
 	player.airControl(delta, direction)
 	player.move_and_slide()
 	
-	if(timer > 0 and Input.is_action_just_pressed("jump")):
+	if(coyoteTimer > 0 and Input.is_action_just_pressed("jump")):
 		finished.emit(JUMPING)
 	
 	if player.is_on_floor():

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://ckfqleu7ls4ti"]
+
+[ext_resource type="Script" uid="uid://csge2dk6vhtdt" path="res://main.gd" id="1_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://8yyhao2ogsm6" path="res://assets/PLUS/4. Penguin World/4_Far_Background_Tile_World1.png" id="2_lquwl"]
+[ext_resource type="Texture2D" uid="uid://bdxkfktji1560" path="res://assets/levelAssets/sloppy.png" id="3_7mycd"]
+[ext_resource type="Texture2D" uid="uid://bneqjq4qhclow" path="res://assets/levelAssets/toppy.png" id="4_272bh"]
+
+[node name="main" type="Node2D" unique_id=1454334003]
+script = ExtResource("1_1bvp3")
+
+[node name="4FarBackgroundTileWorld1" type="Sprite2D" parent="." unique_id=1867341063]
+position = Vector2(333, 217)
+scale = Vector2(77, 48.25)
+texture = ExtResource("2_lquwl")
+
+[node name="Sloppy" type="Sprite2D" parent="." unique_id=2122937298]
+position = Vector2(306, 133)
+scale = Vector2(4, 4)
+texture = ExtResource("3_7mycd")
+
+[node name="Toppy" type="Sprite2D" parent="." unique_id=1261876885]
+position = Vector2(320, 308)
+texture = ExtResource("4_272bh")
